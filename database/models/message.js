@@ -3,17 +3,17 @@ const mongoose = require("mongoose");
 const messageSchema = new mongoose.Schema({
   chatroom: {
     type: mongoose.Schema.Types.ObjectId,
-    required: "Chatroom is required!",
+    required: "Chatroom cannot be empty",
     ref: "Chatroom",
   },
   user: {
     type: mongoose.Schema.Types.ObjectId,
-    required: "Chatroom is required!",
+    required: "Username cannot be empty",
     ref: "User",
   },
   message: {
     type: String,
-    required: "Message is required!",
+    required: "Message cannot be empty!",
   },
 });
 

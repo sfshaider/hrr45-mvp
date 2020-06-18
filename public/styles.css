@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  font-family: Montserrat;
+  box-sizing: border-box;
+  color: #333;
+}
+
+body {
+  font-size: 16px;
+}
+
+.card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  padding: 1rem;
+  position: relative;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 25vw;
+  transform: translate(-50%, -50%);
+}
+
+.cardHeader {
+  background: grey;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2px;
+  text-transform: uppercase;
+  /* transform: skewY(-4deg); */
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  top: -1rem;
+  left: -0.75rem;
+}
+
+.cardBody {
+  margin-top: 2rem;
+}
+
+.inputGroup {
+  margin-bottom: 1rem;
+}
+
+label {
+  font-size: 0.9rem;
+}
+
+input {
+  border: none;
+  padding: 0.5rem 0.1rem;
+  width: 100%;
+  border-radius: 2px;
+  border-bottom: 1px solid #eee;
+  transition: all 0.5s;
+}
+
+input:focus {
+  border-bottom: 1px solid #ccc;
+}
+
+button {
+  background: #f7c52a;
+  border: none;
+  padding: 0.75rem 1.5rem 0.75rem;
+  border-radius: 2px;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: grey;
+  border: black;
+  border-radius: 5px;
+}
+
+.chatrooms {
+  margin-top: 1rem;
+}
+
+.chatroom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.join {
+  background: #f7c52a;
+  padding: 0.25rem 1rem;
+  border-radius: 2px;
+}
+
+/* .join:link{
+  text-decoration: none;
+} */
+
+.join:hover{
+  background: grey;
+}
+
+.chatroomPage {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    margin: -8px;
+  }
+  
+  .chatroomSection {
+    width: 40vw;
+    height: 80vh;
+    margin: auto;
+    border: 1px solid #eee;
+    position: relative;
+  }
+  
+  .chatroomContent {
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    right: 0;
+    bottom: 3.5rem;
+    padding: 0.5rem;
+    overflow: auto;
+  }
+  
+  .chatroomActions {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 72px;
+    grid-gap: 1rem;
+    border-top: 1px solid #eee;
+  }
+  
+  .chatroomActions button {
+    height: 100%;
+  }
+  
+  .message {
+    margin-bottom: 0.25rem;
+  }
+  
+  .otherMessage {
+    color: #0099cc;
+    font-weight: bold;
+  }
+  
+  .ownMessage {
+    color: #00cc00;
+    font-weight: bold;
+  }

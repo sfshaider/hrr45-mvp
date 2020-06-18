@@ -4,12 +4,30 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --ignore client --ignore public ./server/index.js",
+    "build": "webpack --watch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "axios": "^0.19.2",
+    "babel-loader": "^8.1.0",
     "express": "^4.17.1",
-    "mongoose": "^5.9.18"
+    "jwt-then": "^1.0.1",
+    "mongoose": "^5.9.18",
+    "path": "^0.12.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0",
+    "webpack": "^4.43.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.11"
   }
 }
