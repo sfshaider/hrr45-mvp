@@ -16,7 +16,7 @@
     "@babel/preset-react": "^7.10.1",
     "axios": "^0.19.2",
     "babel-loader": "^8.1.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "jwt-then": "^1.0.1",
     "mongoose": "^5.9.18",
     "path": "^0.12.7",
